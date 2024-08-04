@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/jpg">
+</head>
+<body class="light-mode">
+    <header class="light-mode">
+        <nav>
+            <h1>I'm <span class="name-highlight light-mode">Med Aziz Tlili</span></h1><center>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul></center>
+            <img src="night.jpg" alt="Switch Mode" id="mode-switch" class="mode-switch" onclick="toggleMode()">
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Mouhamed Aziz, a passionate Front-End Developer with a keen eye for design and a love for creating user-friendly interfaces. I specialize in building responsive and visually appealing websites using modern technologies like HTML, CSS, and JavaScript.</p>
+        <p>I enjoy transforming complex concepts into elegant and intuitive solutions, always aiming to deliver exceptional user experiences. When I'm not coding, you'll find me exploring the latest web design trends, experimenting with new technologies, or working on personal projects.</p>
+        <p>Feel free to browse through my portfolio to see some of the projects I've worked on. If you'd like to get in touch or collaborate on something exciting, don't hesitate to reach out!</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p><strong>Responsive Portfolio Website</strong></p>
+        <p><strong>Description:</strong> A personal portfolio website showcasing my skills and projects. The site features a responsive design, smooth animations, and interactive elements.</p>
+        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+        <p><strong>Challenge:</strong> Implemented a responsive grid layout to ensure compatibility across different devices.</p>
+        <p><strong>Solution:</strong> Used CSS Flexbox and media queries to create a fluid layout that adapts to various screen sizes.</p>
+        <p><strong>Goals:</strong> Create a visually appealing and functional personal portfolio website that effectively showcases my skills, projects, and professional background.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message"><strong>Message:</strong></label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer class="light-mode">
+        <p>&copy; 2024 Med Aziz Tlili</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
