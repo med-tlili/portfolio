@@ -1,3 +1,18 @@
+function SendMail(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    var params = {
+        from_name: document.getElementById("fullname").value,
+        email_id: document.getElementById("email_id").value,
+        message: document.getElementById("message").value
+    };
+    
+    emailjs.send("service_bw1hoqj", "template_8gykzsm", params).then(function (res) {
+        alert("Success! " + res.status);
+    }).catch(function (error) {
+        alert("Failed to send email. " + error);
+    });
+}
 function toggleMode() {
     const body = document.body;
     const modeSwitch = document.getElementById('mode-switch');

@@ -6,16 +6,26 @@
     <title>Aziz Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icon.jpg" type="image/jpg">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "E47uW1YChvUjt-_KC",
+            });
+   })();
+    </script>
 </head>
 <body class="light-mode">
     <header class="light-mode">
         <nav>
-            <h1>I'm <span class="name-highlight light-mode">Med Aziz Tlili</span></h1><center>
+            <h1>I'm <span class="name-highlight light-mode">Med Aziz Tlili</span></h1>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul></center>
+            </ul>
             <img src="night.jpg" alt="Switch Mode" id="mode-switch" class="mode-switch" onclick="toggleMode()">
         </nav>
     </header>
@@ -39,22 +49,23 @@
         <form id="contact-form">
             <div class="form-group">
                 <label for="name"><strong>Name:</strong></label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="fullname" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email"><strong>Email:</strong></label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email_id" name="email" required>
             </div>
             <div class="form-group">
                 <label for="message"><strong>Message:</strong></label>
                 <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" onclick="SendMail(event)">Send</button>
         </form>
     </section>
     <footer class="light-mode">
         <p>&copy; 2024 Med Aziz Tlili</p>
     </footer>
     <script src="script.js"></script>
+    
 </body>
 </html>
